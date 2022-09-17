@@ -31,6 +31,7 @@ header {
 
 header h1 {
   font-size: 2.5rem;
+  font-weight: bold;
   font-weight: 300;
   padding: 0.8rem;
   color: white;
@@ -147,4 +148,61 @@ main {
 
 .task .actions .delete {
   color: crimson;
+}
+@media screen and (min-width: 350px) and (max-width: 650px) {
+  header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-weight: 300;
+    padding: 0.5rem;
+    width: 60%;
+  }
+  #new-task-input {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    color: var(--light);
+    font-size: 0.7rem;
+  }
+  #new-task-submit {
+    font-size: 0.7rem;
+    font-weight: 200;
+    border-radius: 20px;
+    background-color: #8a0447;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .task .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 0.5rem;
+    font-weight: 150;
+    text-transform: uppercase;
+    transition: 0.4s;
+  }
+  .task-list h2 {
+    font-size: 0.8rem;
+    font-weight: 200;
+    color: var(--grey);
+    margin-bottom: 1rem;
+  }
+  .task .content .text {
+    color: var(--light);
+    font-size: 0.5rem;
+    width: 80%;
+    display: block;
+    transition: 0.4s;
+  }
+  #tasks .task {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
